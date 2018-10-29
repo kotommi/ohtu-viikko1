@@ -116,7 +116,7 @@ public class VarastoTest {
     public void OttaminenEiOtaNegatiivista() {
         double saldo = varasto.getSaldo();
         double otto = varasto.otaVarastosta(-100);
-        assertEquals(1, otto, 0.01);
+        assertEquals(0, otto, 0.01);
         assertEquals(saldo, varasto.getSaldo(), 0.01);
     }
 
